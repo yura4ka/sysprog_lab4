@@ -255,7 +255,7 @@ vector<int> Parser::parse(const string &lexeme) {
     std::istringstream input(lexeme);
     string current;
     std::stack<string> stack;
-    stack.emplace("S");
+    stack.emplace(START);
     vector<int> rules;
 
     input >> current;
